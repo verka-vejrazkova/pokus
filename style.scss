@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header{
+    background-color: #686464;
+    opacity: 0.7;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .container{
+    
+    margin:auto;
+  }
+  
+  
+  body{
+    background-image: url(obrazky/small-poly-3350170_1920.jpg);
+    background-size: cover;  
+    background-position: center;
+    width: 100vw;
+    background-repeat: no-repeat; 
+    color: white;
+    font-family: Typechev-v20; 
+  }
+  
+  
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav-branding{
+    font-size: 2rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  
+  .nav-link:hover{
+    color: rgb(189, 187, 105);
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+  
+  .mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+  }
+  
+  @font-face {
+    font-family:Typechev-v20;
+    src: url('fonts/Typechev-v20.ttf');
+  }
+  
+  .main{
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+    font-family: Typechev-v20; 
+    
+    }
+  
+  h1{
+    font-family: Typechev-v20;
+  }
+  .w1{
+    background-position: center;
+    background-size: cover;
+    margin: 2rem;
+    height: 60vw;
+    }
+  
+  .w2{
+   padding-right: 4rem;
+  }
+  
+  .container{
+    width: 100vw;
+  }
+  
+  @media(max-width:500px){
+body{
+    background-size: cover;  
+    background-position: center;
+    width: 100vw;
+}
+
+  }
+  
+  @media(max-width:1024px){
+    body{
+      background-size: cover;  
+      background-position: center;
+      width: 100vw;
+
+  }
+  
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }
+  
+  @media(max-width:1600px){
+    .container{
+      width: 100%;
+    }
+  }
+    
+    
+    
+    .kontakt {
+      display: grid;
+      text-align: center;
+      
+     
+    }
+    
+    .kontakt__social {
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+      border-radius: 10px;
+    
+    
+        svg {
+          margin: 0.1rem;
+          cursor: pointer;
+        }
+    
+        #fb-circle {
+          transition: all ease .5s;
+          transform-origin: center;
+    
+        }
+    
+       #fb:hover #fb-circle {
+          fill: transparent;
+          stroke-width: 2;
+          stroke-dasharray: 8;
+          transform: rotate(360deg);
+    
+    }
+    
+       #fb-circle #fb-path{
+          fill: #686464;
+    }
+    
+       #fb-circle {
+          transition: all ease .5s;
+          transform-origin: center;
+    
+    }
+    
+       #fb:hover #fb-circle {
+          fill: transparent;
+          stroke-width: 2;
+          stroke-dasharray: 8;
+          transform: rotate(360deg);
+    
+    }
+    
+       #fb-circle #fb-path{
+          fill: #686464;
+    }
+    
+     }
+    
+      
+    #twitter {
+      transition: width 2s, height 2s, transform 2s;
+    }
+    
+    #twitter:hover {
+      transform: rotate(180deg);
+    }
+    
