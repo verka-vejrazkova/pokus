@@ -25,16 +25,75 @@
   
   
   body{
-    background-image: url(obrazky/book-794978_1920.jpg);
-    background-size: cover;  
-    background-position: center;
+    
     width: 100vw;
     background-repeat: no-repeat; 
     color: white;
     font-family: Typechev-v20; 
   }
+
+  .mainpage {
+
+      #stars:hover #hvezda1,#hvezda2,#hvezda4,#hvezda5,#hvezda8,#hvezda19 {
+    
+        animation: changeColor 5s infinite alternate;
+    
+      }
+    
+      @keyframes changeColor {
+        0% {
+          fill: #fdfdfd;
+        }
+    
+        50% {
+          fill: #c8c9b1;
+        }
+    
+        100% {
+          fill: #fbffc1;
+        }
+
+      }
+
+    
+  }
+
+  .mainpage {
+
+    #tent:hover #plachta{
+    
+      animation: changeColor 10s infinite alternate;
   
+    }
   
+    @keyframes changeColor {
+      0% {
+        fill: #fdfdfd;
+      }
+  
+      50% {
+        fill: #df305b;
+      }
+  
+    }
+
+  
+}
+
+/*
+  .main{
+    background-image: url(obrazky/book-794978_1920.jpg);
+    background-size: cover;  
+    background-position: center;
+  }
+  */
+  .pozadi{
+    display: flex;
+    width: 60vw;
+    
+
+  }  
+
   .navbar{
     min-height: 70px;
     display: flex;
