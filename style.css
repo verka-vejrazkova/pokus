@@ -28,6 +28,7 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: Typechev-v20;
+  background-color: #003d47;
 }
 
 .mainpage #stars:hover #hvezda1, .mainpage #hvezda2, .mainpage #hvezda4, .mainpage #hvezda5, .mainpage #hvezda8, .mainpage #hvezda19 {
@@ -59,7 +60,7 @@ body {
   }
 }
 
-.mainpage #tent:hover #plachta {
+.mainpage #tent:hover #tent {
   -webkit-animation: changeColor 10s infinite alternate;
           animation: changeColor 10s infinite alternate;
 }

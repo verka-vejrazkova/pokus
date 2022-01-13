@@ -28,8 +28,9 @@
     
     width: 100vw;
     background-repeat: no-repeat; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Typechev-v20; 
+    background-color: rgb(0, 61, 71);;
   }
 
   .mainpage {
@@ -60,7 +61,7 @@
 
   .mainpage {
 
-    #tent:hover #plachta{
+    #tent:hover #tent{
     
       animation: changeColor 10s infinite alternate;
   
